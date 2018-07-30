@@ -19,7 +19,7 @@ def start_robo():
 
     for contato in contatos:
         cx_pesquisa = drive.find_element_by_class_name('_2MSJr')
-        cx_pesquisa.send_keys(dados)
+        cx_pesquisa.send_keys(contato)
         cx_pesquisa.send_keys(Keys.ENTER)
         cx_msg = drive.find_element_by_class_name("_2S1VP")
         cx_msg.send_keys(msg)
